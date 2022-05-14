@@ -1,13 +1,13 @@
 .contacts {
     display: flex;
-    @include for-phone-up {
+    @include for-phone-only {
         flex-direction: column-reverse;
         margin-bottom: 64px;
     }    
 }
 
 .contacts__item:not(:first-child) {
-    @include for-phone-up {
+    @include for-phone-only {
         margin-bottom: 32px;
     }    
 }
@@ -16,7 +16,7 @@
     color: $primary-text-color;
     fill: $primary-text-color;
 
-    @include for-phone-up {
+    @include for-phone-only {
         display: block;
         font-weight: 500;
         font-size: 24px;
@@ -33,14 +33,14 @@
 }  
 
 .contacts__link--mobile {
-    @include for-phone-up {
+    @include for-phone-only {
         font-size: 34px;         
         color: $accent-color; 
     }
 }
   
 .contacts__icon {
-    @include for-phone-up {
+    @include for-phone-only {
         display: none;
     }
     margin-right: 10px;
