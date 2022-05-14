@@ -1,0 +1,52 @@
+%link {   
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;    
+      
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus,
+    &--current {
+      color: $accent-color;
+      fill: $accent-color;
+    }  
+    
+  }
+
+%button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 0px solid transparent;
+
+  background-color: $accent-color;
+  color: $secondary-text-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+  background-color: $button-accent-color;
+  }
+} 
+
+
+
+%title {  
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+
+}

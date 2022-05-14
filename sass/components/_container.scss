@@ -1,0 +1,23 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;   
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include for-phone-only {
+      min-width: 320px;
+    }
+    
+    @include for-phone-up {
+      width: 480px;
+    }
+
+    @include for-tablet-up {
+      width: 768px;
+    }
+
+    @include for-desctop-up {
+      width: 1200px;
+    }
+  }
+

@@ -1,0 +1,31 @@
+.section {
+    padding: 60px 0;
+}
+
+.section__title {
+    line-height: 1.17;
+    text-align: center;
+    color: $title-text-color;
+
+    @include for-phone-up {
+        margin-bottom: 30px;
+        font-size: 28px;              
+    }
+    
+    @include for-desctop-up {
+        margin-bottom: 50px;
+        font-size: 36px;   
+    }
+}
+
+.section--no-padding {
+    padding-top: 0;
+
+    @media (max-width: 1200px) {
+        display: none;
+    }
+} 
+
+.section--over-bcgr {
+    background-color: $secondary-bg-color;
+}
