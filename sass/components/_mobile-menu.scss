@@ -1,23 +1,26 @@
 .mobile-menu__container {
 
     @include for-phone-only {
-        display: none;
+        display: none;        
         position: absolute;
         z-index: 10;
         top: 0;
         left: 0;
-        width: 100%;    
+        width: 100%; 
+        height: 100vh;   
         padding: 48px 40px;
-        background-color: $primary-bg-color;
-       
+        background-color: $primary-bg-color;       
     } 
-    
-    @include for-tablet-up {
-        display: flex;
-    }
+
+    @media screen and (max-width: 320px) {
+        overflow: scroll;
+    }         
     
     &.is-open {
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }    
 }
 

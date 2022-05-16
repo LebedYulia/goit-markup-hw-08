@@ -1,13 +1,10 @@
 .mobile-social {
     display: flex;
+    
 
     @include for-tablet-up{
         display: none;
     }
-}
-
-.mobile-social__item {
-    display: flex;     
 }
 
 .mobile-social__item:not(:last-child){
