@@ -10,11 +10,8 @@
         height: 100vh;   
         padding: 48px 40px;
         background-color: $primary-bg-color;       
-    } 
-
-    @media screen and (max-width: 320px) {
-        overflow: scroll;
-    }         
+    }     
+            
     
     &.is-open {
         display: block;

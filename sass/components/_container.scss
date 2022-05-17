@@ -2,8 +2,11 @@
     margin-left: auto;
     margin-right: auto;   
     padding-left: 15px;
-    padding-right: 15px;      
+    padding-right: 15px; 
     
+    @media screen and (max-width: 320px) {
+      overflow-x: scroll;
+    }    
 
     @include for-phone-up {
       width: 480px;

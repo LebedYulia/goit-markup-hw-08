@@ -15,6 +15,12 @@
         @content;
     }
 }
+@mixin for-desctop-down {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
 
 @mixin for-desctop-up {
     @media screen and (min-width: 1200px) {

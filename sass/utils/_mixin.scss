@@ -1,0 +1,6 @@
+@mixin for-retina {
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 2dppx) {
+               @content;
+           }
+}
