@@ -1,32 +1,62 @@
-.hero {  
+.hero {     
+    text-align: center;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $hero-bg-color;
+    
+
+    @include for-phone-only {
+            background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
+            url(../images/hero_mobile.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
+            url(../images/hero_mobile@2x.jpg);   
+           }
+    }
+
+    @include for-tablet-up {
+        background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
+            url(../images/hero_tablet.jpg);
+
+            @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
+            url(../images/hero_tablet@2x.jpg);   
+           }
+    }
 
     @include for-desctop-down {
         padding-top: 118px;
-        padding-bottom: 128px;
+        padding-bottom: 128px;        
     }
 
     @include for-desctop-up {
         padding-top: 200px;
         padding-bottom: 200px;
-    }    
-  
-    text-align: center;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
-    url(../images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $hero-bg-color;
-
-    @media (min-device-pixel-ratio: 2),
+        background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
+            url(../images/hero_desctop.jpg);  
+            @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
            (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, $gradient-color, $gradient-color), 
-            url(../images/bg@2x.jpg);   
-           }
-}
+            url(../images/hero_desctop@2x.jpg);   
+           }                     
+    }
+    
+} 
+
+
+
+    
+            
 
 .hero__title {
     margin-top: 0;

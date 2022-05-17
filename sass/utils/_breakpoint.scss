@@ -21,7 +21,6 @@
     }
 }
 
-
 @mixin for-desctop-up {
     @media screen and (min-width: 1200px) {
         @content;
