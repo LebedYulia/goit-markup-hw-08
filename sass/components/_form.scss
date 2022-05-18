@@ -63,28 +63,41 @@
 .form__label-policy {  
   display: flex;  
   align-items: center;
-  justify-content: center;
+  
   margin-right: auto;
   margin-left: auto;
-  margin-top: 18px;  
-  font-size: 14px;
-  line-height: 1.71;
+  margin-top: 18px;   
+  
+
+  @include for-desctop-down {
+    font-size: 12px;
+    line-height: 1.17;
+    justify-content: space-between;    
+}
+
+@include for-desctop-up {
+  font-size: 14px;  
+  line-height: 1.71; 
+  justify-content: center; 
+}
 }      
 
 .form__checkbox:focus ~ .form__chec-icon {
   border-color: $accent-color;
 }        
       
-.form__rule {
-  margin-left: 5px;
+.form__rule {  
   color: $accent-color;
 }
 
 .form__chec-icon {  
   width: 16px;
   height: 15px;
-  margin-right: 8px;
 
+  @include for-desctop-up{
+    margin-right: 8px;
+  }
+  
   border: 2px solid $title-text-color;
   border-radius: 2px;
 }

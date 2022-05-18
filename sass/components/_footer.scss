@@ -12,6 +12,10 @@
         align-items: center; 
     }
 
+    // @include for-tablet-up {
+    //     flex-direction: row;
+    // }
+
     @include for-desctop-up {        
         align-items: baseline;
     }

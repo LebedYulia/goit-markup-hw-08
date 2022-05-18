@@ -1,3 +1,29 @@
+.features {
+    @include for-tablet-up {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;        
+    }  
+    
+    @include for-desctop-up {
+        flex-direction: row;
+    }
+}
+
+.features__item {
+    @include for-tablet-up {
+        margin: 15px;
+        width: calc((100% - 60px)/2);
+    }
+
+    @include for-desctop-up {
+        margin: 15px;
+        width: calc((100% - 120px)/4);
+    }
+}
+
+
+
 .features__item:not(:last-child) {
     @include for-desctop-down {
         margin-bottom: 30px;

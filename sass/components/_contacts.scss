@@ -1,36 +1,69 @@
 .contacts {
     display: flex;
+
     @include for-phone-only {
         flex-direction: column-reverse;
         margin-top: auto;
         margin-bottom: 64px;
-    }    
+    }   
+    
+    @include for-tablet-up {
+        flex-direction: column;
+    }
+
+    @include for-desctop-up {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 .contacts__item:not(:first-child) {
     @include for-phone-only {
         margin-bottom: 32px;
-    }    
+    }  
+    
+    @include for-tablet-up {
+        margin-top: 10px;
+    }
+
+    @include for-desctop-up {
+        margin-top: 0;
+        margin-left: 50px;
+    }
 }
   
 .contacts__link {
+    display: block;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
     color: $primary-text-color;
     fill: $primary-text-color;
-
-    @include for-phone-only {
-        display: block;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-    }     
-    
+    text-decoration: none;
 
     &:hover,
     &:focus {
       color: $accent-color;
-    }    
+      fill: $accent-color;
+    }   
+
+    @include for-phone-only {        
+        font-size: 24px;                       
+    } 
+    
+    @include for-tablet-up {
+        display: flex;
+        align-items: center;
+        font-size: 14px;        
+    }
+
+    @include for-desctop-up {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    
+
+     
 }  
 
 .contacts__link--mobile {

@@ -1,11 +1,10 @@
 .customers {
     display: flex;
     align-items: center;
+    margin: -15px; 
 
     @include for-desctop-down {
-        flex-wrap: wrap; 
-        margin: -15px;       
-       
+        flex-wrap: wrap;       
     }
 }
 

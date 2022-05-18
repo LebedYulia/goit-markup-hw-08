@@ -1,15 +1,41 @@
+.nav {
+    @include for-tablet-up {
+        margin-right: 84px;
+        margin-left: auto;
+    }
+
+    @include for-desctop-up {
+        margin-right: 305px;
+        margin-left: auto;  
+    }    
+}  
+
 .nav__list {
     @include for-phone-only {
         margin-bottom: auto; 
-    }    
+    } 
+
+    @include for-tablet-up {
+        display: flex;
+        align-items: center;                 
+    }
 }
 
 .nav__item:not(:last-child) {
+    @include for-phone-only {
     margin-bottom: 32px;
+    }   
+
+    @include for-tablet-up {
+        margin-right: 50px;   
+    }
 }
 
 .nav__link {
+    position: relative;
     display: block;
+    font-weight: 500;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
             
@@ -17,17 +43,40 @@
         
     color: $title-text-color;
 
-    @include for-phone-only {        
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.17;        
-    }    
+    @include for-phone-only {         
+        font-size: 40px;               
+    }  
+    
+    @include for-tablet-up {
+        padding: 32px 0 32px 0; 
+        font-size: 14px;   
+    } 
+
+    @include for-desctop-up {
+        font-size: 14px;
+        line-height: 1.14;
+    }
     
     &:hover,
     &:focus,
-    &.current {
+    &--current {
         color: $accent-color;
         fill: $accent-color;
     }  
+}    
+    
+ .nav__link--current::after {
+    @include for-tablet-up {
+    content: "";
+  
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
 }
 
