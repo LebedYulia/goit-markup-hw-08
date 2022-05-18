@@ -13,6 +13,16 @@
 
     &:hover,
     &:focus {        
-        color: $secondary-text-color;
+        color: $secondary-text-color;        
     }
-}    
+} 
+
+.address__link:not(:last-child) {
+    @include for-desctop-down {
+    margin-bottom: 8px;
+    }
+
+    @include for-desctop-up {
+        margin-bottom: 9px;
+        }
+}

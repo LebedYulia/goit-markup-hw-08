@@ -10,6 +10,11 @@
     }
 }
 
+@mixin for-tablet-only {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        @content;
+    }
+}
 
 @mixin for-tablet-up {
     @media screen and (min-width: 768px) {

@@ -10,14 +10,12 @@
     @include for-phone-only {
         flex-direction: column;
         align-items: center; 
-    }
+    }    
 
-    // @include for-tablet-up {
-    //     flex-direction: row;
-    // }
-
-    @include for-desctop-up {        
+    @include for-tablet-up {        
         align-items: baseline;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }
 
@@ -29,10 +27,17 @@
 }
 
 .footer__address {
-    @include for-phone-only {           
-        text-align: center;
+    @include for-phone-only {        
         margin-bottom: 60px;
     }
+
+    @include for-tablet-up {
+        margin-right: 165px;        
+    }
+
+    @include for-desctop-down{
+        text-align: center;
+    }    
 
     @include for-desctop-up{
         margin-right: 70px;
@@ -40,10 +45,13 @@
 }
 
 .footer__social {
-        @include for-phone-only {           
-        text-align: center;
+    @include for-phone-only {        
         margin-bottom: 60px;
     }
+    
+    @include for-desctop-down{
+        text-align: center;
+    }    
 
     @include for-desctop-up {
         margin-right: auto;
@@ -51,7 +59,11 @@
 }
 
 .footer__subscription {
-    @include for-phone-only {           
-        text-align: center;
+    @include for-tablet-only {         
+        margin-top: 60px;
     }
+
+    @include for-desctop-down{
+        text-align: center;
+    }    
 }
