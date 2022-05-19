@@ -1,6 +1,6 @@
 .mobile-social {
     display: flex;
-    
+    flex-wrap: wrap;
 
     @include for-tablet-up {
         display: none;
