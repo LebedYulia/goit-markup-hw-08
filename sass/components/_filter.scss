@@ -2,11 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 40px;
+    
+
+    @include for-phone-only {
+        margin-top: -15px;
+        margin-bottom: 40px;
+    }    
 
     @include for-tablet-up {
         justify-content:center; 
-        margin-bottom: 50px;       
+        margin-bottom: 30px;       
+    }
+
+    @include for-desctop-up {         
+        margin-bottom: 30px;       
     }
 }
 
@@ -35,7 +44,7 @@
 
 .filter__item {
     @include for-phone-only {
-        margin-bottom: 15px;
+        margin-top: 15px;
     }
 }
   

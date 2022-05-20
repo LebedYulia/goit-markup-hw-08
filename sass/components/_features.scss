@@ -16,16 +16,13 @@
         width: calc((100% - 60px)/2);
     }
 
-    @include for-desctop-up {
-        margin: 15px;
+    @include for-desctop-up {        
         width: calc((100% - 120px)/4);
     }
 }
 
-
-
 .features__item:not(:last-child) {
-    @include for-desctop-down {
+    @include for-phone-only {
         margin-bottom: 30px;
     } 
 }
@@ -44,7 +41,12 @@
     @extend %title;
     margin-top: 30px;
     margin-bottom: 10px;
+
+    @include for-phone-only {
+        text-align: center;
+    } 
 }
+
 
 .features__text {
     font-size: 14px;

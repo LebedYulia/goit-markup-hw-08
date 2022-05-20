@@ -1,11 +1,12 @@
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $hero-bg-color;    
 }
 
 .footer__container {  
     display: flex;     
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
 
     @include for-phone-only {
         flex-direction: column;
@@ -30,11 +31,7 @@
     @include for-phone-only {        
         margin-bottom: 60px;
     }
-
-    @include for-tablet-up {
-        margin-right: 165px;        
-    }
-
+    
     @include for-desctop-down{
         text-align: center;
     }    
@@ -59,6 +56,9 @@
 }
 
 .footer__subscription {
+    @include for-phone-only {           
+        width: 100%;            
+  }
     @include for-tablet-only {         
         margin-top: 60px;
     }

@@ -1,11 +1,7 @@
 .subscription__label {
-      display: block;
-
-      @include for-tablet-only {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-      }     
+      @include for-desctop-down {
+            display: block; 
+      }           
 }
   
 .subscription__input {      
@@ -53,7 +49,7 @@
      padding: 10px 29px;
      margin-left: 10px;  
 
-     @include for-tablet-up {
+     @include for-desctop-down {
       margin-left: 0;                 
       }
 }

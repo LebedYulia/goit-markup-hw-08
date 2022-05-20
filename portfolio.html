@@ -19,7 +19,7 @@
                 aria-expanded="false"
                 aria-controls="mobile-menu__container"
                 data-menu-button>
-          <svg width=40 height=40 area-label ="Переключатель мобильного меню">              
+          <svg width=40 height=40 >              
             <use class="mobile-menu__icon-menu" href="./images/icons.svg#menu"></use>
             <use class="mobile-menu__icon-close" href="./images/icons.svg#close"></use>
           </svg>            
@@ -363,19 +363,18 @@
           <h3 class="footer__title">Подпишитесь на рассылку</h3>
           <form action="subscription">
             <label class="subscription__label">
-              <input class="subscription__input" type="email" name="email" placeholder="E-mail" />
-              <button class="subscription__button" type="submit">
-                Подписаться
-                <svg width="24" height="24" class="subscription__icon">
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-              </button>
+              <input class="subscription__input" type="email" name="email" placeholder="E-mail" />              
             </label>
+            <button class="subscription__button" type="submit">
+              Подписаться
+              <svg width="24" height="24" class="subscription__icon">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
-
     <!-- Script -->    
     <script src="./js/mobile-menu.js"></script>
   </body>
