@@ -1,5 +1,9 @@
 .section {
     padding: 60px 0;
+
+    @include for-desctop-up {
+        padding: 94px 0;          
+    }
 }
 
 .section__title {
