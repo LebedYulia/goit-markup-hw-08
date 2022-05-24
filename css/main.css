@@ -132,6 +132,11 @@ body {
 .section {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 
 .section__title {
   line-height: 1.17;

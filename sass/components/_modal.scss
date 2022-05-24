@@ -5,12 +5,12 @@
     transform: translate(-50%, -50%);  
     opacity: 1;
     transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);  
-    width: 95%;     
-  
+    width: 95%; 
+         
     padding: 40px;
     background-color: $primary-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 4px;    
    
     
     @include for-phone-up {
@@ -23,7 +23,9 @@
         height: 581px;
     }
     
-}  
+} 
+
+
   
 .modal__button {
     position: fixed;
